@@ -11,3 +11,23 @@ package: data:
 
 package _static: util:
 	- 
+
+package: ui:
+	- Lựa chọn người dùng:
+		- 1. Quản lý 
+		- 2. Lên kế hoạch
+		- 3. Thoát
+	- Trong 1.Quản lý (CRUD)
+		- Thêm bài tập
+		- Chỉnh sửa bài tập
+		- Xóa bài tập
+		- In danh sách bài tập
+		- Lưu danh sách bài tập
+		- Trở lại
+	- Trong 2. Lên kế hoạch tập luyện
+		- Xem kế hoạch tập luyện hôm nay
+		- Tạo mới kế hoạch tập luyện
+		- Trở lại
+	
+Nhật ký:
+23/3/2024: lên kế hoạch - tạo khuôn data
