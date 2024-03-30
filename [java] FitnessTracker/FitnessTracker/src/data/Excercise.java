@@ -5,12 +5,12 @@ package data;
  *
  * @author nguyen47tramy
  */
-public abstract class Excercise {
-    private String id;
+public abstract class Excercise implements Comparable<Excercise> {
+    private String id; //có dạng EX0001
     private String name;
-    private String eqipmentNeeded;
-    private int set;
-    private int rep;
+    private String eqipmentNeeded; //hiện tại chỉ lấy yes/none
+    private int set; //lớn hơn hoặc bằng 1
+    private int rep; //lớn hơn hoặc bằng 1
     private String description;
 
     public Excercise(String id, String name, String eqipmentNeeded, int set, int rep, String description) {
@@ -74,5 +74,11 @@ public abstract class Excercise {
     
     public abstract double calculateDuration();
     
+    @Override
+    public int compareTo(Excercise that) {
+        return this.id.compareToIgnoreCase(that.id);
+    }
+    //so sánh trên ID của Excercise, 
+    //bất kể là bài tập nào cũng phải có định dạng id tương tự
     
 }

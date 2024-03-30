@@ -5,9 +5,10 @@ Một ứng dụng theo dõi luyện tập cho phép người dùng theo dõi ti
 Các tính năng chính trong APP: CRUD workout
 
 package: data:
-	- Excercise:(abstract) khuôn, mỗi excercise có thời gian tập, lượng calo đốt
+	- Excercise:(abstract) khuôn, mỗi excercise có id, name, equipment needed, set, rep.  Phương thức calculateCaloriesBurned(), calculateDuration(), @override ttString() printExcercise().
 	- Kế thừa từ lớp excercise có các lớp excercise tập chung các nhóm cơ khác nhau (tập cùng các nhóm cơ nên phải được lưu trữ chung, có các thuộc tính chung) => ba lớp upper, lower, abs + thêm nhóm Cardio
 	- Workout: Array của excercise, phải gennerate được ngẫu nhiên các exercise trong cùng một class excercise cụ thể để ghép lại thành một buổi tập
+	- Plan
 
 package _static: util:
 	- 
