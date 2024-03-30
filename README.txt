@@ -32,3 +32,4 @@ package: ui:
 	
 Nhật ký:
 23/3/2024: lên kế hoạch - tạo khuôn data
+30/3/2024: tạo util quản lý dữ liệu nhập của người dùng
